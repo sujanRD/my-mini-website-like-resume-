@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<!-- saved from url=(0062)http://127.0.0.1:5500/Documents/HTML%202ndbasics/myresume.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="./my resume_files/all.min.css">
+
+  <link rel="stylesheet" href="./my resume_files/style.css">
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <h2>Sujan <span>RD</span></h2>
+
+    <ul>
+      <li><a href="http://127.0.0.1:5500/Documents/HTML%202ndbasics/myresume.html#">Home</a></li>
+      <li><a href="http://127.0.0.1:5500/Documents/HTML%202ndbasics/myresume.html#">About</a></li>
+      <li><a href="http://127.0.0.1:5500/Documents/HTML%202ndbasics/myresume.html#">Skills</a></li>
+      <li><a href="http://127.0.0.1:5500/Documents/HTML%202ndbasics/myresume.html#">Projects</a></li>
+      <li><a href="http://127.0.0.1:5500/Documents/HTML%202ndbasics/myresume.html#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Home Section -->
+  <section class="home">
+
+    <div class="left">
+
+      <h3>Hi, I'm</h3>
+
+      <h1>Sujan <span>RD</span></h1>
+
+      <h2>CSE Student | Web Developer</h2>
+
+      <p>
+        I am a Computer Science student passionate about
+        learning web technologies and building websites.
+      </p>
+
+      <div class="buttons">
+        <button class="btn1">Download CV</button>
+        <button class="btn2">Contact Me</button>
+      </div>
+
+      <div class="icons">
+        <i class="fa-brands fa-github"></i>
+        <i class="fa-brands fa-linkedin"></i>
+        <i class="fa-brands fa-instagram"></i>
+      </div>
+
+    </div>
+
+    <div class="right">
+      <img src="./my resume_files/job photo.jpeg">
+    </div>
+
+  </section>
+
+  <!-- About -->
+  <section class="about">
+
+    <h1>About Me</h1>
+
+    <p>
+      I am currently pursuing B.E in Computer Science Engineering.
+      <br><br>
+      I enjoy solving problems and creating beautiful websites.
+      <br><br>
+      My goal is to become a full stack developer.
+    </p>
+
+  </section>
+
+  <!-- Skills -->
+  <section class="skills">
+
+    <h1>My Skills</h1>
+
+    <div class="skill-box">
+
+      <div class="card">
+        <h2>HTML</h2>
+        <p>80%</p>
+      </div>
+
+      <div class="card">
+        <h2>CSS</h2>
+        <p>70%</p>
+      </div>
+
+      <div class="card">
+        <h2>Python</h2>
+        <p>80%</p>
+      </div>
+       <div class="card">
+        <h2>C program</h2>
+        <p>80%</p>
+      </div>
+      
+
+
+
+    </div>
+
+  </section>
+
+  <!-- Projects -->
+  <section class="projects">
+
+    <h1>My Projects</h1>
+
+    <div class="project-box">
+
+      <div class="project">
+        <h2>Portfolio Website</h2>
+        <p>HTML and CSS portfolio project.</p>
+      </div>
+
+      <div class="project">
+        <h2> Python basics</h2>
+        <p>Simple calculator design.</p>
+      </div>
+
+      <div class="project">
+        <h2>Python basics</h2>
+        <p>electricity bill caluclator.</p>
+      </div>
+      <div class="project">
+        <h2>C program</h2>
+        <p>guessing game with a number.</p>
+      </div>
+      
+
+
+    </div>
+
+  </section>
+
+  <!-- Contact -->
+  <section class="contact">
+
+    <h1>Contact Me</h1>
+
+    <p>Email : sujanrd14@gmail.com</p>
+    <p>Phone : +91 9740915433</p>
+
+  </section>
+
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
